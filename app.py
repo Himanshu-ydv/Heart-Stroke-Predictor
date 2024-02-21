@@ -5,10 +5,10 @@ import streamlit as st
 import pickle as pk
 
 # Loading the pre-trained model
-model = pk.load(open(r"C:\Users\yhima\Desktop\Temp 2\Heart_disease_model.pkl","rb"))
+model = pk.load(open(r"Heart_disease_model.pkl","rb"))
 
 # Loading the dataset
-df = pd.read_csv(r"C:\Users\yhima\Desktop\Temp 2\heart_disease.csv")
+df = pd.read_csv(r"heart_disease.csv")
 
 # Setting up the Streamlit app
 st.header("Heart Disease Predictor")
